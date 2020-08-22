@@ -1,0 +1,15 @@
+class MyCipher:
+    def __init__(self):
+        self.alphabet = 'abcdefghijklmnopqrstuvwxyz 1234567890QWERTYUIOPLKJHGFDSAZXCVBNM\n'
+
+    def encrypt(self, text, shift=7):
+        cipher = ''
+        for i in text:
+            cipher += self.alphabet[(self.alphabet.index(i) + shift) % len(self.alphabet)]
+        return cipher
+
+    def decrypt(self, cipher, shift=7):
+        text = ''
+        for i in cipher:
+            text += self.alphabet[(self.alphabet.index(i) - shift) % len(self.alphabet)]
+        return text
