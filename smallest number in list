@@ -1,0 +1,7 @@
+how_many_num = int(input('How many numbers: '))
+lst = []
+for i in range(how_many_num):
+    number = input('Enter a number: ')
+    lst.append(number)
+
+print('Smallest number of your list is', min(lst))
