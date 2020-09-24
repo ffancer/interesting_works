@@ -1,0 +1,7 @@
+def result(string):
+    return ''.join([i*2 for i in string])
+
+
+print(result("Donald Trump"))
+print(result("Hello World!"))
+print(result("1234!_ "))
