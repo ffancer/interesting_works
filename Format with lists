@@ -1,0 +1,12 @@
+lst1 = ['Ivan', 'Borya', 'Ingvar']
+lst2 = ['Queen', 'ABBA', 'Pizza']
+lst3 = ['Slowpoke']
+template = "yourtemplatestringhere"
+
+template1 = "My {elem} are: {}, {} and {}.".format(*lst1, elem="friends")
+template2 = "My {elem} are: {}, {} and {}.".format(*lst2, elem="loves")
+template3 = "My {elem} are: {}.".format(*lst3, elem="pokemon")
+
+print(template1)
+print(template2)
+print(template3)
