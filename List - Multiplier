@@ -1,0 +1,6 @@
+def multiply(lst):
+    return [[i] * len(lst) for i in lst]
+
+print(multiply([4, 5]))
+print(multiply(["*", "%", "$"]))
+print(multiply(["A", "B", "C", "D", "E"]))
