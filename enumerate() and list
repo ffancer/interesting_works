@@ -1,0 +1,11 @@
+def result(a):
+    lst = []
+    for i, j in enumerate(a, 0):
+        adding = int(f'{i}') + int(f'{j}')
+        lst.append(adding)
+    return lst
+
+
+print(result([0, 0, 0, 0, 0]))  # 01234
+print(result([1, 2, 3, 4, 5]))  # 13579
+print(result([5, 4, 3, 2, 1]))  # 55555
