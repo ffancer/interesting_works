@@ -1,0 +1,7 @@
+def result(a):
+    return {v: k for k, v in a.items()}  # v = value, k = keys
+
+
+print(result({"z": "q", "w": "f"}))
+print(result({"a": 1, "b": 2, "c": 3}))
+print(result({"zebra": "koala", "horse": "camel"}))
