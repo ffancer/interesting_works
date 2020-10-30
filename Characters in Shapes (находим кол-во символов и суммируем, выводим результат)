@@ -1,0 +1,19 @@
+def result(a):
+    b = [len(i) for i in a]
+    return sum(b)
+
+
+print(result([
+  "###",
+  "###",
+  "###"
+]))
+print(result([
+  "22222222",
+  "22222222",
+]))
+print(result([
+  "------------------"
+]))
+print(result([]))
+print(result(["", ""]))
