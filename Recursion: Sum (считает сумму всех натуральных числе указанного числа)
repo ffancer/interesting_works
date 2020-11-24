@@ -1,0 +1,10 @@
+def result(a):
+    if a <= 1:
+        return a
+    else:
+        return a + result(a-1)
+
+
+print(result(5))
+print(result(1))
+print(result(12))
