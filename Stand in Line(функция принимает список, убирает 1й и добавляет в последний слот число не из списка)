@@ -1,0 +1,13 @@
+def result(lst, num):
+    if not lst:
+        return "No list has been selected"
+    else:
+        del lst[0]
+        lst.append(num)
+        return lst
+
+
+print(result([5, 6, 7, 8, 9], 1))
+print(result([7, 6, 3, 23, 17], 10))
+print(result([1, 10, 20, 42 ], 6))
+print(result([], 6))  # если список пуст то возвращает фразу "No list has been selected" / if list is empty return "No list has been selected"
